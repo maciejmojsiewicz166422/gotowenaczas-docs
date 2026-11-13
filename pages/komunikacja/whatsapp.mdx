@@ -1,0 +1,116 @@
+# WhatsApp w Gotowe na czas
+
+import { Callout, Steps } from 'nextra/components'
+
+<Callout type="warning">
+  **Nikt nie podłącza numeru telefonu do aplikacji.** Nie ma integracji z WhatsApp Business API.
+  Aplikacja korzysta z publicznych linków `wa.me`, które otwierają WhatsApp na urządzeniu użytkownika.
+</Callout>
+
+## Jak to działa?
+
+Gotowe na czas **nie wysyła wiadomości na WhatsApp**. Zamiast tego generuje link, który otwiera aplikację WhatsApp na Twoim telefonie z gotową wiadomością. Ty sam decydujesz, kiedy i komu ją wyślesz.
+
+### Krok po kroku
+
+<Steps>
+
+### Dodaj ekipę w aplikacji
+
+W sekcji Ekipy dodaj nazwę ekipy, branżę i opcjonalnie numer telefonu osoby kontaktowej.
+
+### Wygeneruj link do udostępnienia
+
+Na stronie ekipy kliknij „Udostępnij harmonogram". Aplikacja utworzy unikalny, podpisany link (np. `app.gotowenaczas.pl/e/abc123`), który pozwala ekipie zobaczyć swoje prace — nawet bez zakładania konta.
+
+### Kliknij „Wyślij przez WhatsApp"
+
+Aplikacja otworzy link w formacie `wa.me`:
+
+- **Jeśli ekipa ma wpisany numer telefonu** — WhatsApp otworzy rozmowę z tym numerem, z gotową wiadomością zawierającą link do harmonogramu.
+- **Jeśli numeru nie ma** — WhatsApp pokaże wybór kontaktu. Ty wybierasz, komu wysłać.
+
+### WhatsApp otwiera się na Twoim telefonie
+
+Wiadomość jest gotowa do wysłania. Możesz ją zmienić lub wysłać od razu. **Wiadomość wychodzi z Twojego numeru telefonu, nie z aplikacji.**
+
+### Ekipa otrzymuje link
+
+Ekipa klika link i widzi swoje prace na budowie — bez zakładania konta. Jeśli chcesz, żeby ekipa miała pełny dostęp (czat, zgłaszanie postępów), zaproś ją osobno przez e-mail w sekcji Ustawienia budowy.
+
+</Steps>
+
+## Co widzi ekipa po kliknięciu?
+
+Link prowadzi do widoku prac przypisanych danej ekipie. Ekipa widzi:
+
+- Swoje prace i terminy
+- Adres budowy
+- Dane kontaktowe właściciela
+
+Ekipa **nie widzi** budżetu, umów ani innych ekip. To bezpieczny, ograniczony widok.
+
+## Alternatywy dla WhatsApp
+
+WhatsApp to najwygodniejszy sposób, bo większość ekip go ma. Ale nie jedyny:
+
+| Sposób | Jak to zrobić |
+|---|---|
+| **Kopiuj link** | Kliknij „Kopiuj link" i wklej go w dowolnym komunikatorze |
+| **SMS** | Wklej skopiowany link do SMSa |
+| **Messenger** | Wklej link w rozmowie na Messengerze |
+| **Signal, Telegram** | Wklej link — działa tak samo |
+| **E-mail** | Wklej link w treści wiadomości |
+| **Osobiście** | Pokaż QR kod na ekranie telefonu |
+
+<Callout type="info">
+  Wszystkie sposoby działają identycznie — link jest ten sam. WhatsApp po prostu automatyzuje wklejanie linku i wybór odbiorcy.
+</Callout>
+
+## Najczęstsze pytania
+
+### Czy muszę podłączyć WhatsApp do aplikacji?
+
+**Nie.** Aplikacja otwiera WhatsApp na Twoim telefonie z gotową wiadomością. Nie ma żadnego połączenia kont. Nie trzeba nic konfigurować ani autoryzować.
+
+### Czy ekipa dostanie powiadomienia na WhatsApp?
+
+**Nie automatycznie.** Powiadomienia o zmianach na budowie idą e-mailem i w aplikacji. Przez WhatsApp wysyłasz sam — kiedy chcesz udostępnić link do harmonogramu lub szybko skontaktować się z ekipą.
+
+### Czy aplikacja widzi moje rozmowy na WhatsApp?
+
+**Nie.** Link `wa.me` otwiera WhatsApp jako osobną aplikację na Twoim telefonie. Gotowe na czas nie ma dostępu do Twoich wiadomości, kontaktów ani historii rozmów.
+
+### Czy mogę używać aplikacji bez WhatsApp?
+
+**Tak.** WhatsApp jest wygodą, nie wymogiem. Możesz skopiować link i wysłać go dowolnym komunikatorem, SMSem, e-mailem — czymkolwiek. Cała reszta aplikacji (czat, powiadomienia, umowy, budżet) działa bez WhatsApp.
+
+### Czy firma budowlana też tak wysyła?
+
+**Identycznie.** Każdy użytkownik korzysta ze swojego własnego WhatsApp. Firma nie łączy numeru firmowego z aplikacją. Mechanizm jest ten sam: link `wa.me`, gotowa wiadomość, wysyłka z własnego telefonu.
+
+### Czy klient firmy dostaje wiadomość na WhatsApp?
+
+**Nie.** Klient firmy (odbiorca budowy pod klucz) jest zapraszany wyłącznie przez e-mail. Komunikacja z klientem odbywa się przez czat w aplikacji i e-mail, nigdy przez WhatsApp.
+
+### A co z kolumną WhatsApp w ustawieniach powiadomień?
+
+W ustawieniach powiadomień widać kolumnę WhatsApp z nieaktywnymi checkboxami. To przygotowanie na przyszłą integrację z WhatsApp Business API — kiedy aplikacja będzie mogła wysyłać powiadomienia bezpośrednio na WhatsApp. Na razie ta funkcja nie jest dostępna.
+
+## Dla firm: jak to wyjaśnić klientom
+
+Jeśli prowadzisz firmę budowlaną i Twoi klienci pytają o WhatsApp:
+
+> „Aplikacja Gotowe na czas nie wysyła wiadomości na WhatsApp. Korzystamy z niej do zarządzania harmonogramem, ekipami i dokumentami. Kiedy chcemy szybko wysłać link do ekipy, aplikacja otwiera WhatsApp z gotową wiadomością — ale to my wysyłamy ze swojego telefonu. Ty jako klient dostajesz zaproszenie e-mailem i wszystko widzisz w aplikacji."
+
+## Podsumowanie
+
+| Cecha | Stan |
+|---|---|
+| Połączenie numeru z aplikacją | **Nie wymagane** |
+| Kto wysyła wiadomość | **Użytkownik, ze swojego telefonu** |
+| Czy aplikacja widzi rozmowy | **Nie** |
+| Czy WhatsApp jest wymagany | **Nie — link można wysłać czymkolwiek** |
+| Automatyczne powiadomienia WhatsApp | **Nie — planowane na przyszłość** |
+| Dla konta prywatnego | **Tak** |
+| Dla konta firmowego | **Tak, identycznie** |

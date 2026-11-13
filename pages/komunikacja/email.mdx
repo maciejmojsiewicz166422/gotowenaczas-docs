@@ -1,0 +1,52 @@
+# Powiadomienia e-mail
+
+Aplikacja wysyła e-maile automatycznie, gdy wydarzy się coś ważnego na Twojej budowie. Nie musisz ich konfigurować — działają od momentu rejestracji.
+
+import { Callout } from 'nextra/components'
+
+## Jakie e-maile wysyła aplikacja
+
+### Konto i bezpieczeństwo
+- **Potwierdzenie e-maila** — po rejestracji i po zmianie adresu
+- **Resetowanie hasła** — gdy poprosisz o nowe hasło
+
+### Zaproszenia
+- **Zaproszenie do budowy** — gdy ktoś zaprosi Cię jako współwłaściciela, członka ekipy lub klienta firmy
+- **Zaproszenie do firmy** — gdy firma zaprosi Cię jako pracownika
+
+### Budowa
+- **Zbliżające się płatności** — gdy termin płatności jest blisko
+- **Zaległe płatności** — gdy termin minął
+- **Codzienne podsumowanie** — przegląd zmian na budowie z ostatnich 24 godzin
+
+### Firma (konto firmowe)
+- **Przekazanie budowy klientowi** — klient dostaje e-mail, że firma przekazała budowę
+- **Powiadomienia o płatnościach klienta** — klient dostaje informację o nowych ratach
+
+## Skąd przychodzą e-maile
+
+Wszystkie e-maile przychodzą z adresu **noreply@gotowenaczas.pl**. Dodaj ten adres do kontaktów, żeby wiadomości nie trafiały do spamu.
+
+<Callout type="info">
+  E-maile wysyłamy przez Resend — profesjonalną usługę do dostarczania wiadomości. Dzięki temu e-maile docierają szybko i rzadko trafiają do spamu.
+</Callout>
+
+## Jak wyłączyć powiadomienia
+
+Nie chcesz dostawać e-maili o każdej zmianie? Możesz wyłączyć poszczególne kategorie:
+
+1. Wejdź w **Ustawienia konta** → **Powiadomienia**.
+2. Odznacz checkbox przy kategorii, której nie chcesz dostawać e-mailem.
+3. Powiadomienia w aplikacji nadal będą aktywne.
+
+<Callout type="warning">
+  Nie da się wyłączyć e-maili związanych z bezpieczeństwem (potwierdzenie adresu, reset hasła) ani zaproszeń. Te są zawsze wysyłane.
+</Callout>
+
+## E-mail a inne kanały
+
+- **E-mail** = automatyczne powiadomienia od systemu
+- **Czat** = rozmowy między ludźmi na budowie
+- **WhatsApp** = linki wysyłane ręcznie przez Ciebie
+
+E-mail to jedyny kanał, którym aplikacja kontaktuje się z ekipą, która nie zalogowała się do aplikacji (np. zaproszenie).

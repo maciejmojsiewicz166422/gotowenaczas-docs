@@ -1,0 +1,48 @@
+# Jak działa komunikacja
+
+import { Callout } from 'nextra/components'
+
+Gotowe na czas oferuje trzy kanały komunikacji. Żaden z nich nie wymaga podłączenia numeru telefonu do aplikacji.
+
+<Callout type="info">
+  WhatsApp jest wygodą, nie wymogiem. Cała komunikacja działa bez niego — przez e-mail i czat w aplikacji.
+</Callout>
+
+## Kanały komunikacji
+
+| Kanał | Jak działa | Kto inicjuje |
+|---|---|---|
+| **E-mail** | System wysyła automatycznie: zaproszenia, potwierdzenia, przypomnienia | Automatycznie |
+| **Czat w aplikacji** | Wiadomości tekstowe i zdjęcia, trzy rodzaje rozmów | Każdy uczestnik budowy |
+| **WhatsApp** | Aplikacja generuje link z gotową wiadomością, użytkownik wysyła sam ze swojego WhatsApp | Właściciel budowy (ręcznie) |
+
+## Co robi każdy kanał?
+
+| Sytuacja | E-mail | Czat | WhatsApp |
+|---|---|---|---|
+| Zaproszenie ekipy do budowy | ✅ automatycznie | — | ✅ link do wysłania ręcznie |
+| Zaproszenie klienta (firma) | ✅ automatycznie | — | — |
+| Przypomnienie o płatności | ✅ automatycznie | — | — |
+| Pytanie do ekipy o termin | — | ✅ | — |
+| Udostępnienie harmonogramu | — | — | ✅ link do wysłania ręcznie |
+| Codzienne podsumowanie | ✅ automatycznie | — | — |
+| Zgłoszenie problemu | — | ✅ | — |
+
+## Konto prywatne vs firmowe
+
+| Kanał | Konto prywatne | Konto firmowe |
+|---|---|---|
+| **E-mail** | Zaproszenia, przypomnienia, podsumowania | To samo + zaproszenie klienta, przekazanie budowy, powiadomienia klienta |
+| **Czat** | Ogólny, na pracy, bezpośredni | To samo, ale klient widzi **tylko rozmowy bezpośrednie** z firmą |
+| **WhatsApp** | Linki `wa.me` dla ekip | Identycznie — linki `wa.me` dla ekip |
+
+<Callout type="warning">
+  Klient firmy nigdy nie potrzebuje WhatsApp. Zaproszenie i powiadomienia dostaje e-mailem, a rozmowę prowadzi w czacie aplikacji.
+</Callout>
+
+## Dowiedz się więcej
+
+- [WhatsApp — jak to działa](/komunikacja/whatsapp)
+- [Czat w aplikacji](/komunikacja/czat)
+- [Powiadomienia e-mail](/komunikacja/email)
+- [Ustawienia powiadomień](/komunikacja/powiadomienia-ustawienia)

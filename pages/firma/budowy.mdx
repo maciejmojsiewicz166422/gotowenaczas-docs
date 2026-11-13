@@ -1,0 +1,61 @@
+# Zarządzanie budowami
+
+Konto firmowe pozwala prowadzić wiele budów jednocześnie. Każda budowa ma pełny zestaw narzędzi — plan, budżet, umowy, ekipy i czat — tak jak budowa na koncie prywatnym.
+
+## Tworzenie budowy
+
+Nową budowę może utworzyć **admin** lub **kierownik projektu**. Koordynator i przeglądający nie mogą tworzyć budów.
+
+Przejdź do **Projekty** → **Nowa budowa** i wypełnij kreator jak zwykle: adres, data rozpoczęcia, plan budowy.
+
+Nowa budowa automatycznie należy do firmy — nie do osoby, która ją utworzyła.
+
+## Limit budów
+
+Liczba budów „w toku" (utworzonych i niezakończonych) zależy od planu:
+
+| Plan | Limit budów w toku |
+|---|---|
+| Firma 10 | do 10 |
+| Firma 25 | do 25 |
+| Firma+ | bez limitu (indywidualnie) |
+
+Budowa „w toku" to każda budowa, która została utworzona i jeszcze nie została zakończona. Budowa zakończona lub usunięta nie liczy się do limitu.
+
+> **Ważne**
+>
+> Gdy osiągniesz limit, nie utworzysz nowej budowy — musisz zakończyć jedną z istniejących lub zmienić plan na wyższy.
+
+## Lista budów
+
+Wszystkie budowy firmy widać w zakładce **Budowy** na stronie firmy (`/firma`). Każda budowa pokazuje:
+
+- Nazwę i adres
+- Status (w toku / zakończona / przekazana klientowi)
+- Postęp planu
+
+## Zespół firmy na budowie
+
+W ustawieniach każdej budowy znajdziesz sekcję **„Zespół firmy na budowie"**. Tutaj admin przypisuje pracowników firmy do tej konkretnej budowy.
+
+Przypisanie daje pracownikowi dostęp odpowiedni do jego roli firmowej:
+
+- Kierownik projektu i koordynator → mogą edytować budowę
+- Przeglądający → widzi budowę w trybie tylko do odczytu
+- Admin → widzi wszystkie budowy automatycznie, nie trzeba przypisywać
+
+## Zakończenie budowy
+
+Gdy prace na budowie są skończone:
+
+1. Wejdź w **Ustawienia** budowy
+2. Zaznacz **„Prace na tej budowie są skończone"**
+3. Kliknij **„Zakończ budowę"**
+
+Zakończona budowa jest zablokowana — nie można w niej edytować planu, budżetu ani umów. Gwarancje i obsługa posprzedażowa działają dalej.
+
+Po zakończeniu budowy możesz [przekazać ją klientowi](/firma/przekazanie).
+
+> **Wskazówka**
+>
+> Dopóki budowa nie została przekazana klientowi, można ją wznowić (Ustawienia → „Wznów budowę"). Po przekazaniu — już nie.

@@ -1,0 +1,69 @@
+# Abonament i plany
+
+Konto firmowe wymaga aktywnego planu abonamentowego. Plan określa, ile budów firma może prowadzić jednocześnie.
+
+## Dostępne plany
+
+### Firma 10
+
+- **Do 10 budów w toku** jednocześnie
+- **1 999 zł netto / miesiąc** (+ 23% VAT = 2 458,77 zł brutto)
+- Płatność: subskrypcja Stripe (karta lub BLIK)
+- Faktura VAT wystawiana automatycznie po każdej płatności
+
+### Firma 25
+
+- **Do 25 budów w toku** jednocześnie
+- **3 999 zł netto / miesiąc** (+ 23% VAT = 4 918,77 zł brutto)
+- Płatność: subskrypcja Stripe (karta lub BLIK)
+- Faktura VAT wystawiana automatycznie po każdej płatności
+
+### Firma+
+
+- **Powyżej 25 budów** — dla dużych firm
+- **Cena za budowę ustalana indywidualnie** z każdą firmą
+- Płatność: faktura miesięczna za budowy otwarte w poprzednim miesiącu
+- Termin płatności: 14 dni
+
+> **Wszystkie ceny są netto**
+>
+> Do każdej ceny doliczany jest 23% VAT. Firma otrzymuje fakturę VAT do księgowości.
+
+## Co oznacza „budowa w toku"?
+
+Budowa w toku to każda budowa, która:
+- Została **utworzona**
+- Nie została jeszcze **zakończona** ani **usunięta**
+
+Budowy zakończone, przekazane klientowi lub usunięte **nie liczą się** do limitu.
+
+## Firma+ — rozliczenie za użycie
+
+W planie Firma+ rozliczenie jest miesięczne, na podstawie faktycznego użycia:
+
+- **Budowa liczy się za dany miesiąc**, jeśli była otwarta w dowolnym momencie między pierwszym a ostatnim dniem miesiąca (czas warszawski)
+- Budowa zakończona i wznowiona w tym samym miesiącu liczy się raz
+- Budowy testowe (sample) nigdy się nie liczą
+
+**Przykład:** Firma ma 31 budów otwartych w październiku, cena ustalona na 120 zł za budowę. Faktura za październik: 31 × 120 zł = 3 720 zł netto + 23% VAT.
+
+Faktura jest wystawiana **1. dnia następnego miesiąca** i wysyłana automatycznie.
+
+## Zarządzanie abonamentem
+
+Wejdź na `/firma/abonament`, żeby:
+
+- Zobaczyć swój aktualny plan i status
+- Zobaczyć liczbę budów w toku
+- Zmienić plan (Firma 10 ↔ Firma 25)
+- Przejść do portalu płatności Stripe (zmiana karty, historia faktur)
+
+W planie Firma+ abonament zarządza operator aplikacji — skontaktuj się z nami, żeby ustalić warunki.
+
+## Kiedy plan jest wymagany?
+
+Plan jest wymagany, żeby **tworzyć nowe budowy**. Bez aktywnego planu:
+
+- Istniejące budowy pozostają dostępne (możesz je przeglądać i edytować)
+- Nie możesz tworzyć nowych budów
+- Na stronie budowy zobaczysz komunikat o nieaktywnym planie

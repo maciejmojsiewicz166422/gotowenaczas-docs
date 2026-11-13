@@ -1,0 +1,67 @@
+# Role w firmie
+
+W firmie każdy pracownik ma przypisaną rolę, która określa co może robić. Role działają na dwóch poziomach: na poziomie firmy i na poziomie konkretnej budowy.
+
+## Dostępne role
+
+### Admin
+
+Pełny dostęp do firmy i wszystkich jej budów.
+
+- Tworzy i zarządza budowami
+- Zaprasza i usuwa pracowników
+- Zarządza abonamentem i rozliczeniami
+- Automatycznie widzi **wszystkie** budowy firmy jako współwłaściciel
+
+### Kierownik projektu
+
+Zarządza budowami, które tworzy lub do których został przypisany.
+
+- Tworzy nowe budowy (jest ich właścicielem)
+- Na przypisanych budowach — pełny dostęp (współwłaściciel)
+- Nie zarządza firmą, pracownikami ani abonamentem
+
+### Koordynator
+
+Zarządza przypisanymi budowami, ale nie tworzy nowych.
+
+- Pełny dostęp do budów, do których został przypisany (współwłaściciel)
+- **Nie może** tworzyć nowych budów
+- Nie zarządza firmą ani abonamentem
+
+### Przeglądający
+
+Dostęp tylko do odczytu na przypisanych budowach.
+
+- Widzi plan, budżet, umowy, ekipy na przypisanych budowach
+- **Nie może** niczego edytować
+- **Nie może** tworzyć budów
+
+## Porównanie ról
+
+| Uprawnienie | Admin | Kierownik projektu | Koordynator | Przeglądający |
+|---|:---:|:---:|:---:|:---:|
+| Tworzenie budów | ✓ | ✓ | ✗ | ✗ |
+| Edycja budowy | ✓ (wszystkie) | ✓ (swoje/przypisane) | ✓ (przypisane) | ✗ |
+| Zapraszanie klienta | ✓ | ✓ (swoje/przypisane) | ✓ (przypisane) | ✗ |
+| Zarządzanie pracownikami | ✓ | ✗ | ✗ | ✗ |
+| Zarządzanie abonamentem | ✓ | ✗ | ✗ | ✗ |
+| Przekazanie budowy | ✓ | ✓ (swoje/przypisane) | ✗ | ✗ |
+
+## Przypisywanie do budów
+
+Admin widzi wszystkie budowy automatycznie. Pozostałe role muszą być **przypisane** do konkretnych budów.
+
+Przypisanie odbywa się w ustawieniach budowy, w sekcji **„Zespół firmy na budowie"**. Tylko admin może przypisywać i usuwać osoby z budów.
+
+> **Wskazówka**
+>
+> Kierownik projektu automatycznie staje się właścicielem budowy, którą sam utworzył — nie trzeba go przypisywać.
+
+## Zmiana roli
+
+Admin może zmienić rolę pracownika w zakładce **Pracownicy** na stronie firmy (`/firma/pracownicy`). Zmiana roli od razu zmienia uprawnienia na wszystkich przypisanych budowach.
+
+> **Uwaga**
+>
+> Usunięcie pracownika z firmy automatycznie usuwa jego dostęp do wszystkich budów firmy.
