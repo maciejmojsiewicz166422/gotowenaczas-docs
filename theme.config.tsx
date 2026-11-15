@@ -3,11 +3,11 @@ import type { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
   logo: <b>Gotowe na czas</b>,
+  // The navbar's project link defaults to a GitHub icon; show plain text instead.
   project: {
     link: 'https://app.gotowenaczas.pl',
+    icon: <span style={{ fontWeight: 600 }}>Otwórz aplikację →</span>,
   },
-  docsRepositoryBase:
-    'https://github.com/maciejmojsiewicz166422/gotowenaczas-docs/tree/main',
   footer: {
     content: '© 2026 Gotowe na czas. Wszystkie prawa zastrzeżone.',
   },
@@ -27,12 +27,13 @@ const config: DocsThemeConfig = {
   toc: {
     title: 'Na tej stronie',
   },
+  // No "edit on GitHub" link, and feedback goes to e-mail instead of GitHub issues.
   editLink: {
-    content: 'Edytuj tę stronę →',
+    component: null,
   },
   feedback: {
     content: 'Masz pytanie? Napisz do nas →',
-    labels: 'feedback',
+    useLink: () => 'mailto:kontakt@gotowenaczas.pl?subject=Pytanie%20o%20dokumentacj%C4%99',
   },
   navigation: {
     prev: true,
