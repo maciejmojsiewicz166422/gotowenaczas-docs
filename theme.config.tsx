@@ -8,7 +8,7 @@ import type { DocsThemeConfig } from 'nextra-theme-docs'
  * copy of trackingBootstrap() in the app's src/lib/tracking.ts: change both
  * together. Empty GTM_ID keeps GTM and the banner off.
  */
-const GTM_ID = ''
+const GTM_ID = 'GTM-5D48MP5P'
 const TRACKED_HOSTS = ['gotowenaczas.pl', 'docs.gotowenaczas.pl']
 
 function trackingBootstrap(gtmId: string): string {
